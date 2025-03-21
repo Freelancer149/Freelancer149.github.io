@@ -1,0 +1,132 @@
+/* Basic styling reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #fdfdfd;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(45deg, #0f172a, #1e293b);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00f2fe;
+}
+
+/* Hero Section */
+#hero {
+    padding: 50px;
+    text-align: center;
+    background: url('images/team.jpg') no-repeat center center/cover;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #00f2fe;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    background-color: #00f2fe;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    background-color: #333;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #1e293b;
+    color: white;
+}
+body.dark-mode {
+    background: #121212;
+    color: #ddd;
+}
+
+header.dark-mode {
+    background: #1e293b;
+}
+
+footer.dark-mode {
+    background: #0f172a;
+}
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Loader overlay */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #00f2fe;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 3s linear infinite;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+body.loaded #loader {
+    display: none;
+}
