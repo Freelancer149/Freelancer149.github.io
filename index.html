@@ -96,24 +96,31 @@
         </div>
 
         <div class="image">
-            <img src="images/myphoto.jpg" alt="Your Image" height="120" width="95">
+    
+            <img src="images/myphoto.jpg" alt="Muhammad Uzair - Web Developer" height="120" width="95">
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <form id="contactForm">
+        <form id="contactForm"> 
+            
+            <label for="name">Your Name:</label>
             <input type="text" placeholder="Your Name" id="name" required>
+
+            <label for="email">Your Email:</label>
             <input type="email" placeholder="Your Email" id="email" required>
+
+            <label for="message">Your Message:</label>
             <textarea placeholder="Your Message" id="message" required></textarea>
+
             <button type="submit" class="btn">Send</button>
         </form>
         <p id="formMessage"></p>
     </section>
 
-    <!-- FontAwesome Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- JavaScript File -->
     <script src="app.js" defer></script>
