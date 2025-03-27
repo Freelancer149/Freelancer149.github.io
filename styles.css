@@ -1,0 +1,129 @@
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Dark Theme Setup */
+body {
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    transition: 0.5s ease;
+}
+
+/* Header & Navigation */
+header {
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: orange;
+}
+
+.logo span {
+    color: #f43f5e;
+}
+
+/* Navigation Menu */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f43f5e;
+}
+
+/* Dark/Light Mode Toggle */
+#darkModeToggle {
+    background: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Home Section Styling */
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+    text-align: left;
+}
+
+/* Text Animations */
+.content h1 {
+    font-size: 50px;
+    color: blue;
+}
+
+.content h1 span {
+    color: #f43f5e;
+}
+
+.content h2 span {
+    color: #f43f5e;
+    border-right: 3px solid #f43f5e;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Contact Form */
+#contact {
+    padding: 20px;
+    text-align: center;
+}
+
+form input,
+form textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 25px;
+    background: #f43f5e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Light Mode Style */
+.light-mode {
+    background-color: #fff;
+    color: #333;
+}
+
+.light-mode header {
+    background: rgba(255, 255, 255, 0.9);
+}
